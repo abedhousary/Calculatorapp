@@ -1,0 +1,171 @@
+:root{
+/*ThemeOne*/
+
+/*Background*/
+--Verydarkdesaturatedbluemainbg:hsl(222,26%,31%);
+--Verydarkdesaturatedbluetggl:hsl(223,31%,20%);
+--Verydarkdesaturatedbluescbg:hsl(224,36%,15%);
+/*Keys*/
+--Desaturateddarkbluekeybg:hsl(225,21%,49%);
+--Desaturateddarkbluekeyshadow:hsl(224,28%,35%);
+--Redkeybg:hsl(6,63%,50%);
+--Darkredkeyshadow:hsl(6,70%,34%);
+--Lightgrayishorangekeybg:hsl(30,25%,89%);
+--Grayishorangekeyshadow:hsl(28,16%,65%);
+
+/*Text*/
+--Verydarkgrayishblue:hsl(221,14%,31%);
+--White:hsl(0,0%,100%);
+}
+body {
+    background-color: var(--Verydarkdesaturatedbluemainbg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+* {
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+.header {
+    width: 480px;
+    height: 50px;
+    /* background-color: var(--White); */
+    display: flex;
+    align-items: center;
+}
+.header .title {
+    color: var(--White);
+    font-size:25px;
+    width: 115%;
+}
+.header .toggle-contaienr {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-contaienr  .label {
+    text-transform: uppercase;
+    color: var(--White);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.toggle-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* flex-direction: row; */
+}
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 10px;
+}
+.options .tick {
+    color: var(--White);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.toggle-btn {
+    width: 75px;
+    height: 25px;
+    background-color: var(--Verydarkdesaturatedbluetggl);
+    border-radius: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggler {
+    width: 18px;
+    height: 18px;
+    background-color: var(--Redkeybg);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tick-one {
+    transform: translateX(-24px) !important;
+}
+.tick-two {
+    transform: translateX(0px) !important;
+}
+.tick-three{
+    transform: translateX(24px) !important;
+}
+.screen {
+    width: 490px;
+    height: 140px;
+    background-color: var(--Verydarkdesaturatedbluescbg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 4rem;
+    color: var(--White);
+    padding: 10px;
+}
+.keypad {
+    width: 490px;
+    height: 400px;
+    background-color: var(--Verydarkdesaturatedbluetggl);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center ; */
+}
+
+.keys-col {
+    width: 100%;
+    height: 50px;
+    /* background-color: var(--Redkeybg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.key {
+    width: 80px;
+    height: 50px;
+    color: var(--Desaturateddarkbluekeyshadow);
+    background-color: var(--Lightgrayishorangekeybg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 31px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px var(--Grayishorangekeyshadow);
+    margin-right: 20px;
+     cursor: pointer;
+     transform: 0.2s;
+}
+
+.del {
+    color: var(--White);
+    background-color: var(--Desaturateddarkbluekeybg);
+    box-shadow: 0px 5px 0px 0px var(--Desaturateddarkbluekeyshadow);
+}
+.equal {
+    color: var(--White);
+   background-color: var(--Redkeybg);
+    box-shadow: 0px 5px 0px 0px var(--Darkredkeyshadow);
+}
+.action-key {
+    width: 180px;
+    height: 50px;
+    margin-right:20px;
+   
+}
